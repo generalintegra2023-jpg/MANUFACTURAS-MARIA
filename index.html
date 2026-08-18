@@ -267,7 +267,7 @@
     <h2 class="head">Equipos de alta gama, calidad Tier 1</h2>
     <div class="spec">
       <div class="col"><h4>Paneles solares <em>645 Wp</em></h4>
-        <div class="row"><span>Cantidad</span><b>40 unidades</b></div>
+        <div class="row"><span>Cantidad</span><b>36-40 unidades</b></div>
         <div class="row"><span>Potencia unitaria</span><b>645 Wp</b></div>
         <div class="row"><span>Potencia DC total</span><b>25,8 kWp</b></div>
         <div class="row"><span>Marca y modelo</span><b>connera - trina - ja solar</b></div>
@@ -294,7 +294,7 @@
     <div class="spec">
       <div class="col"><h4>Configuración del sistema</h4>
         <div class="row"><span>Capacidad DC</span><b>25,8 kWp</b></div>
-        <div class="row"><span>Paneles</span><b>44 × 645 W</b></div>
+        <div class="row"><span>Paneles</span><b>35 - 40 × 645 W</b></div>
         <div class="row"><span>Inversor</span><b>1 × SolaX trifásico 20 kW</b></div>
         <div class="row"><span>Relación DC/AC</span><b>1,42</b></div>
         <div class="row"><span>Producción estimada</span><b>33.148 kWh/año</b></div>
@@ -306,7 +306,7 @@
         <div class="row"><span>Semáforo de disponibilidad</span><b>Naranja</b></div>
         <div class="row"><span>Cobertura del consumo</span><b>≈ 59 %</b></div>
         <div class="row"><span>Excedentes</span><b>Marginales, no facturados</b></div>
-        <div class="row"><span>Inversión</span><b>$ 93.654.000</b></div>
+        <div class="row"><span>Inversión</span><b>$ 114.150.000</b></div>
       </div>
     </div>
     <p class="lead" style="margin-top:18px">Sistema trifásico con esquema AGPE bajo autoconsumo prioritario: la energía generada se consume directamente en la planta, desplazando compra de energía a la red. La potencia AC se mantiene por debajo del límite de inyección de referencia del transformador.</p>
@@ -562,7 +562,7 @@ document.querySelectorAll('[data-close]').forEach(b=>b.addEventListener('click',
 
 /* SIMULADOR */
 const C={PR:0.80,deg:0.005,disc:0.15,N:25,tax:0.35,oymKwp:70000,oymEsc:0.05,contrib:1.20,co2:0.164};
-const P={bello:{name:"Manufacturas Maria \u2013 Bello, Antioquia",kwp:28.38,hsp:4.0,tarifa:790,precio:93654000,consumo:4655,contrib:1.0}};
+const P={bello:{name:"Manufacturas Maria \u2013 Bello, Antioquia",kwp:28.38,hsp:4.0,tarifa:790,precio:114150000,consumo:4655,contrib:1.0}};
 let cur="bello",S={};
 function loadP(k){cur=k;const p=P[k];S={tarifa:p.tarifa,hsp:p.hsp,esc:6,ley:false,contrib:(p.contrib!==undefined?p.contrib:C.contrib)};
   const st=document.getElementById('sTarifa');st.min=Math.floor(p.tarifa);st.max=Math.round(p.tarifa*1.8);st.value=p.tarifa;
